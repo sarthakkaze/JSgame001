@@ -20,9 +20,6 @@ function jump(){
 
 
 
-
-
-
 var checkdead = setInterval(function(){
     var chartop =
     parseInt(window.getComputedStyle(character).getPropertyValue("top"));
