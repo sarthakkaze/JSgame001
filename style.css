@@ -6,8 +6,13 @@ body{
     background-color: #0f0f0f;
 }
 
+.gridcontainer{
+    display:grid;
+    grid-template-columns: auto auto ;
+}
+
     #game{
-        margin:100px 100px 10px 100px;
+        margin:100px 100px 0px 100px;
         width:  700px;
         height:  300px;
         border: 5px solid rgba(0, 0, 0, 0.233);
@@ -59,9 +64,92 @@ body{
         height:  60px;
         border-radius: 20px;
         background-color: #FFEA7F;
-        font-size: 40px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-family: 'Press Start 2P', cursive;
         font-weight: 600;
         text-align: center;
     }
     
+
+
+    .introcard{
+        position: fixed;
+        z-index: 3;
+        border-radius: 5vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #b67fff;
+        width: 80vh;
+        height: 60vh;
+        left: 65vh;
+        top: 20vh;
+    }
+    .carddata{
+        margin: 4vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #0f0f0f23;
+        height: 50vh;
+        width: 80vh;
+    
+    }
+    .JS{
+        width: 20vh;
+        background-color: #ff9e2f;
+        border-radius: 6vh;
+        
+    }
+    #runner{
+        margin-top: 7vh;
+        margin-left: -4vh;
+        font-family: 'Bangers', cursive;
+        font-size: 10vh;
+    }
+    #gitlink{
+        position:fixed;
+        width: 40vh;
+        height: 10vh;
+        border: 0.3vh solid black ;
+        border-radius: 10vh;
+        top:60vh;
+        left: 77vh;
+    }
+
+    .info{
+        margin: 4vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #0f0f0f23;
+        height: 50vh;
+        width: 10vh;
+        
+    }
+
+    .player{
+        background-color: #000000;
+        margin-top:10px;
+        border-radius: 30px;
+        width: 400px;
+        height: 600px;
+    }
+    .row1{
+        align-items: center;
+        padding: 20px;
+    }
+    .row1 h2{
+        margin-top: 20px;
+        color: cornflowerblue;
+        text-align: center;
+        align-items: center; 
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    .showcase{
+        display: flex;
+        justify-content: space-around ;
+        margin-top:40px ;
+    }
+    .playercard{
+
+    }
