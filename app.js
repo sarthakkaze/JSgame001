@@ -22,6 +22,11 @@ cross.addEventListener('click',() => {
         }, 3000);
 }*/
 
+function startanim(){
+    block.style.animation = "block 1500ms infinite linear";
+    counter = 0;
+}
+
 window.addEventListener("keydown", checkKeyPress, false);
 
 function checkKeyPress(key){
@@ -52,7 +57,7 @@ var checkdead = setInterval(function(){
 
     if(blockleft<70 && blockleft>40 && chartop>=180){
         block.style.animation = "none";
-      //  alert("YOU are a LOSER!"+Math.floor(counter/100));
+       alert("YOU LOSE! \n SCORE: "+Math.floor(counter/100));
         counter = 0;
         block.style.animation = "block 1500ms infinite linear";
     }else{
